@@ -1,7 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
-
-
 import GermanWords from "../components/GermanWords.vue";
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -10,9 +9,8 @@ const router = createRouter({
       path: '/german',
       name: 'german',
       component: GermanWords,
-      meta: { requiresAuth: true }
     },
- 
   ]
-})
-export default router
+});
+
+export default router;
